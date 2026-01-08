@@ -18,8 +18,16 @@ public class Logement {
 
     public void afficher() {
         hote.afficher();
-
         System.out.println("Le logement est situé " + adresse + ".");
         System.out.println("Superficie : " + superficie + "m2");
     }
+
+    public int getTarifParNuit() {
+        return tarifParNuit;
+    }
+
+    public Personne getHote() {
+        return hote;
+    }
+
 }
