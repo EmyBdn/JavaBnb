@@ -27,8 +27,9 @@ public class Logement {
         return tarifParNuit;
     }
 
-    public Personne getHote() {
-        return hote;
+    public int getSuperficie() {
+        return superficie;
     }
+
 
 }

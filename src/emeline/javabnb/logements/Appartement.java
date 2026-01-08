@@ -21,5 +21,8 @@ public class Appartement extends Logement {
                         : numeroEtage == 1 ? " au 1er étage"
                         : " au " + numeroEtage + "ème étage"
         );
+
+        System.out.println("Superficie : " + getSuperficie() + "m2");
+
     }
 }
