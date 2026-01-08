@@ -1,4 +1,5 @@
 package emeline.javabnb.logements;
+import emeline.javabnb.utilisateurs.Hote;
 import emeline.javabnb.utilisateurs.Personne;
 
 public class Logement {
@@ -8,7 +9,7 @@ public class Logement {
     private int superficie;
     private int nbVoyageursMax;
 
-    public Logement(Personne paramHote, int paramTarifParNuit, String paramAdresse, int paramSuperficie, int paramNbVoyageursMax) {
+    public Logement(Hote paramHote, int paramTarifParNuit, String paramAdresse, int paramSuperficie, int paramNbVoyageursMax) {
         hote = paramHote;
         tarifParNuit = paramTarifParNuit;
         adresse = paramAdresse;
