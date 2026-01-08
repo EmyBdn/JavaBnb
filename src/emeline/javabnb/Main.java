@@ -1,5 +1,6 @@
 package emeline.javabnb;
 
+import emeline.javabnb.logements.Appartement;
 import emeline.javabnb.logements.Logement;
 import emeline.javabnb.logements.Maison;
 import emeline.javabnb.reservations.Sejour;
@@ -19,7 +20,7 @@ public class Main {
         Sejour vacancesEnneigees = new Sejour(dateArriveeSejour1, 4, leDomainedOreo, 2);
         vacancesEnneigees.afficher();
 
-        Maison monHameauDeCharme = new Maison(moi, 120, "29 Avenue des Oliviers, 83000 Toulon", 200, 6, 0, true);
+        Appartement monHameauDeCharme = new Appartement(moi, 120, "29 Avenue des Oliviers, 83000 Toulon", 200, 6, 5, 0);
         monHameauDeCharme.afficher();
     }
 }

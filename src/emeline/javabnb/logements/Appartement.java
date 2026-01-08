@@ -3,7 +3,23 @@ package emeline.javabnb.logements;
 import emeline.javabnb.utilisateurs.Hote;
 
 public class Appartement extends Logement {
-    public Appartement(Hote paramHote, int paramTarifParNuit, String paramAdresse, int paramSuperficie, int paramNbVoyageursMax) {
+
+    private int superficieBalcon;
+    private int numeroEtage;
+
+    public Appartement(Hote paramHote, int paramTarifParNuit, String paramAdresse, int paramSuperficie, int paramNbVoyageursMax, int paramSuperficieBalcon, int paramNumeroEtage) {
         super(paramHote, paramTarifParNuit, paramAdresse, paramSuperficie, paramNbVoyageursMax);
+        this.superficieBalcon = paramSuperficieBalcon;
+        this.numeroEtage = paramNumeroEtage;
+    }
+
+    @Override
+    public void afficher() {
+        super.afficher();
+        System.out.print(
+                numeroEtage == 0 ? " au rez de chaussée."
+                        : numeroEtage == 1 ? " au 1er étage"
+                        : " au " + numeroEtage + "ème étage"
+        );
     }
 }
