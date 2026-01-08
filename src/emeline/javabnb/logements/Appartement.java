@@ -4,8 +4,8 @@ import emeline.javabnb.utilisateurs.Hote;
 
 public class Appartement extends Logement {
 
-    private int superficieBalcon;
-    private int numeroEtage;
+    private final int superficieBalcon;
+    private final int numeroEtage;
 
     public Appartement(Hote paramHote, int paramTarifParNuit, String paramAdresse, int paramSuperficie, int paramNbVoyageursMax, int paramSuperficieBalcon, int paramNumeroEtage) {
         super(paramHote, paramTarifParNuit, paramAdresse, paramSuperficie, paramNbVoyageursMax);

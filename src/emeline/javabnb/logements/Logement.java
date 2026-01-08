@@ -3,11 +3,11 @@ import emeline.javabnb.utilisateurs.Hote;
 import emeline.javabnb.utilisateurs.Personne;
 
 public class Logement {
-    private Personne hote;
-    private int tarifParNuit;
-    private String adresse;
-    private int superficie;
-    private int nbVoyageursMax;
+    private final Personne hote;
+    private final int tarifParNuit;
+    private final String adresse;
+    private final int superficie;
+    private final int nbVoyageursMax;
 
     public Logement(Hote paramHote, int paramTarifParNuit, String paramAdresse, int paramSuperficie, int paramNbVoyageursMax) {
         hote = paramHote;

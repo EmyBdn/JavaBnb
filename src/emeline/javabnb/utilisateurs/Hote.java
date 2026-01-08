@@ -2,7 +2,7 @@ package emeline.javabnb.utilisateurs;
 
 public class Hote extends Personne {
 
-    private int delaiDeReponse;
+    private final int delaiDeReponse;
 
     public Hote(String paramPrenom, String paramNom, int paramAge, int paramDelaiDeReponse) {
         super(paramPrenom, paramNom, paramAge);

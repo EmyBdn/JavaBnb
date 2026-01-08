@@ -4,8 +4,8 @@ import emeline.javabnb.utilisateurs.Hote;
 
 public class Maison extends Logement {
 
-    private int superficieJardin;
-    private Boolean possedePiscine;
+    private final int superficieJardin;
+    private final Boolean possedePiscine;
 
     public Maison(Hote paramHote, int paramTarifParNuit, String paramAdresse, int paramSuperficie, int paramNbVoyageursMax, int paramSuperficieJardin, Boolean paramPossedePiscine) {
         super(paramHote, paramTarifParNuit, paramAdresse, paramSuperficie, paramNbVoyageursMax);
