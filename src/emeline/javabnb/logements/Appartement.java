@@ -17,8 +17,10 @@ public class Appartement extends Logement {
     public void afficher() {
         super.afficher();
         System.out.print(
-                numeroEtage == 0 ? " au rez de chaussée."
-                        : numeroEtage == 1 ? " au 1er étage"
+                numeroEtage == 0
+                    ? " au rez de chaussée."
+                    : numeroEtage == 1
+                        ? " au 1er étage"
                         : " au " + numeroEtage + "ème étage"
         );
 
