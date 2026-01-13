@@ -15,7 +15,6 @@ public class Appartement extends Logement {
 
     @Override
     public void afficher() {
-        super.afficher();
         System.out.print(
                 numeroEtage == 0
                     ? " au rez de chaussée."

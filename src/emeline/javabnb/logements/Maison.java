@@ -15,7 +15,7 @@ public class Maison extends Logement {
 
     @Override
     public void afficher() {
-        super.afficher();
+        getHote().afficher();
         System.out.println(
                 superficieJardin == 0
                         ? "Jardin : Non"

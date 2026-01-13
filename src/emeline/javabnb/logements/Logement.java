@@ -1,10 +1,8 @@
 package emeline.javabnb.logements;
 import emeline.javabnb.utilisateurs.Hote;
-import emeline.javabnb.utilisateurs.Personne;
-
-public class Logement {
-    private final Personne hote;
-    private final int tarifParNuit;
+public abstract class Logement {
+    private final Hote hote;
+    private int tarifParNuit;
     private final String adresse;
     private final int superficie;
     private final int nbVoyageursMax;
@@ -17,11 +15,7 @@ public class Logement {
         nbVoyageursMax = paramNbVoyageursMax;
     }
 
-    public void afficher() {
-        hote.afficher();
-        System.out.println("Le logement est situé " + adresse + ".");
-        System.out.println("Superficie : " + superficie + "m2");
-    }
+    public abstract void afficher();
 
     public int getTarifParNuit() {
         return tarifParNuit;
@@ -31,5 +25,11 @@ public class Logement {
         return superficie;
     }
 
+    public Hote getHote() {
+        return hote;
+    }
 
+    public int getNbVoyageursMax() {
+        return nbVoyageursMax;
+    }
 }
